@@ -1,0 +1,9 @@
+{{ define "main" }} {{ .Content }}
+
+<h1>{{ .Title }}</h1>
+
+{{ end }} {{define "aside" }}
+{{ if .Params.description }}
+<p>{{ .Params.description }}</p>
+{{ end }}
+{{ end }}
